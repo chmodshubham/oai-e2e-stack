@@ -108,7 +108,7 @@ sudo apt install -y libforms-dev libforms-bin
 #### Install yaml-cpp
 
 > [!TIP]
-> Installing yaml-cpp using `sudo apt install libyaml-cpp-dev` did not resolve the issue mentioned below. Therefore, it is recommended to build and install yaml-cpp directly from its source repository on GitHub.
+> Installing yaml-cpp using `sudo apt install libyaml-cpp-dev` did not resolve the issue mentioned below. Therefore, it is recommended to build and install yaml-cpp directly from its source repository on GitHub. <br> <br>
 > ![yaml-cpp error](./img/yaml-cpp-error.png)
 
 ```bash
@@ -190,8 +190,8 @@ sudo ./nr-softmodem -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/gnb.sa.band
 #### USRP B210
 
 > [!NOTE]  
-> This should be run in a second Ubuntu 22.04 host, other than gNB
-> It only applies when running OAI gNB with USRP B210
+> This should be run in a second Ubuntu 22.04 host, other than gNB. <br>
+> It only applies when running OAI gNB with USRP B210. <br>
 
 ```bash
 cd ~/openairinterface5g/cmake_targets/ran_build/build
@@ -201,8 +201,8 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --ue-fo-comp
 #### RFsimulator
 
 > [!NOTE]  
-> This should be run on the same host as the OAI gNB
-> It only applies when running OAI gNB with RFsimulator
+> This should be run on the same host as the OAI gNB. <br>
+> It only applies when running OAI gNB with RFsimulator. <br>
 
 ```bash
 cd ~/openairinterface5g/cmake_targets/ran_build/build
