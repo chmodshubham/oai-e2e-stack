@@ -25,7 +25,7 @@ Or follow the steps below for a quick setup.
 ### Install Pre-requisites
 
 ```bash
-sudo apt install -y git net-tools putty
+sudo apt install -y git net-tools putty unzip
 ```
 
 #### Install Docker
@@ -84,7 +84,7 @@ docker compose down
 Or Follow: [UHD Build Guide](https://files.ettus.com/manual/page_build_guide.html)
 
 ```bash
-sudo apt install -y autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool g++ git inetutils-tools libboost-all-dev libncurses-dev libusb-1.0-0 libusb-1.0-0-dev libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml
+sudo apt install -y autoconf automake build-essential ccache cmake cpufrequtils doxygen ethtool g++ git inetutils-tools libboost-all-dev libncurses-dev libusb-1.0-0 libusb-1.0-0-dev libusb-dev python3-dev python3-mako python3-numpy python3-requests python3-scipy python3-setuptools python3-ruamel.yaml libcap-dev libblas-dev liblapacke-dev libatlas-base-dev
 git clone https://github.com/EttusResearch/uhd.git ~/uhd
 cd ~/uhd
 git checkout v4.7.0.0
