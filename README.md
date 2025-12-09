@@ -73,8 +73,6 @@ cd ~/oai-cn5g
 docker compose down
 ```
 
----
-
 ## OAI gNB and nrUE Deployment Guide
 
 ### Pre-requisites (UHD & Dependencies)
@@ -134,7 +132,7 @@ cd ~/openairinterface5g
 git checkout develop
 ```
 
-#### Install OAI dependencies
+####    
 
 ```bash
 cd ~/openairinterface5g/cmake_targets
@@ -212,15 +210,13 @@ sudo ./nr-uesoftmodem -r 106 --numerology 1 --band 78 -C 3619200000 --uicc0.imsi
 #### RFsimulator in FR2
 
 > [!NOTE]  
-> This should be run on the same host as the OAI gNB
-> It only applies when running OAI gNB with RFsimulator in FR2
+> This should be run on the same host as the OAI gNB. <br>
+> It only applies when running OAI gNB with RFsimulator in FR2. <br>
 
 ```bash
 cd ~/openairinterface5g/cmake_targets/ran_build/build
 sudo ./nr-uesoftmodem -r 32 --numerology 3 --band 257 -C 27533280000 --uicc0.imsi 001010000000001 --ssb 72 --rfsim
 ```
-
----
 
 ## End-to-End Connectivity Test
 
