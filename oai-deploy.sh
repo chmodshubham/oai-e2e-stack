@@ -36,17 +36,6 @@ sudo apt install -y autoconf automake build-essential ccache cmake cpufrequtils 
   python3-ruamel.yaml libcap-dev libblas-dev liblapacke-dev libatlas-base-dev
 print_success "Build dependencies installed."
 
-# Ensuring pip3 is installed
-if ! command -v pip3 &> /dev/null; then
-  print_info "Installing pip3..."
-  sudo apt install -y python3-pip
-fi
-
-# Installing Python runtime modules
-print_section "Installing Python Runtime Modules"
-sudo pip3 install gevent mprpc pyudev pyroute2
-print_success "Python modules for OAI installed."
-
 # Cloning and building UHD v4.7.0.0
 print_section "Cloning and Building UHD v4.7.0.0"
 git clone https://github.com/EttusResearch/uhd.git ~/uhd
